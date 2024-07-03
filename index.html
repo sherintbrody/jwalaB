@@ -1584,13 +1584,14 @@
     <script>
 
 function bloomFlower() {
-        if (document.body.classList.contains('not-loaded')) {
-              document.body.classList.remove("not-loaded");
-              
-              document.querySelector('.reloadBtn').textContent = 'mm  പൊക്കോ  😴';
-          } else {
-            location.reload();
-          }
+  if (document.body.classList.contains('not-loaded')) {
+    document.body.classList.remove("not-loaded");
+    document.querySelector('.reloadBtn').textContent = 'ഒന്നൂടി ക്ലിക്ക്   😴';
+} else {
+    // Redirect to a specific website URL
+    window.location.href = 'https://sherintbrody.github.io/jwala/'; // Replace 'https://example.com' with your desired URL
+}
+
       }
 
     </script>
