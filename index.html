@@ -1586,7 +1586,11 @@
 function bloomFlower() {
   if (document.body.classList.contains('not-loaded')) {
     document.body.classList.remove("not-loaded");
-    document.querySelector('.reloadBtn').textContent = 'ഒന്നൂടി ക്ലിക്ക്   😴';
+    document.querySelector('.reloadBtn').textContent = 'wait chey 👀';
+    
+    setTimeout(function() {
+        document.querySelector('.reloadBtn').textContent = 'ഒന്നൂടി ക്ലിക്ക് 😴';
+    }, 5000); // Change 3000 to the desired delay in milliseconds (e.g., 3000 for 3 seconds)
 } else {
     // Redirect to a specific website URL
     window.location.href = 'https://sherintbrody.github.io/jwala/'; // Replace 'https://example.com' with your desired URL
